@@ -1,0 +1,45 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+
+/* colors */
+:root{
+    --dark:#231f20;
+    --red:#ed1c24;
+}
+/* colors */
+
+
+
+/* Navbar */
+
+.navbar{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500;
+}
+.navbar-brand img{
+    width: 150px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu{
+    background-color:var(--dark);
+  }
+  .dropdown-menu li>a{
+    color: white;
+    font-weight: bold;
+  }
+  .navbar-text a .fa-brands{
+    margin-left: 10px;
+    color: var(--red);
+  }
+  .navbar-text a .fa-facebook{
+    color: #4267B2;
+  }
+  .navbar-text a .fa-instagram{
+    color: #ff0066;
+  }
+  /* Navbar */
