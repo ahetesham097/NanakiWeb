@@ -4,80 +4,113 @@
 /* font-family: 'Poppins', sans-serif; */
 
 /* colors */
-:root{
-    --dark:#231f20;
-    --red:#ed1c24;
+:root {
+  --dark: #231f20;
+  --red: #ed1c24;
 }
-/* colors */
 
+/* colors */
+body {
+  overflow-x: hidden;
+}
 
 
 /* Navbar */
 
-.navbar{
-    font-family: 'Poppins', sans-serif; 
-    font-weight: 500;
+.navbar {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
-.navbar-brand img{
-    width: 150px;
+
+.navbar-brand img {
+  width: 150px;
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  .dropdown-menu{
-    background-color:var(--dark);
-  }
-  .dropdown-menu li>a{
-    color: white;
-    font-weight: bold;
-  }
-  .navbar-text a .fa-brands{
-    margin-left: 10px;
-    color: var(--red);
-  }
-  .navbar-text a .fa-facebook{
-    color: #4267B2;
-  }
-  .navbar-text a .fa-instagram{
-    color: #ff0066;
-  }
-  /* Navbar */
-
-  /* Carousel */
-  .carousel-item{
-    height: 600px;
-    background: linear-gradient(to right, blue,pink);
-  }
-  .carousel-caption{
-    bottom: 120px;
-    z-index: 2;  
-}
-.carousel-caption p{
-    font-size: 25px;
-}
-.carousel-caption p>a{
-    font-weight: bold;
-}
-.carousel-caption h5{
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-.carousel-inner::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0,.7);
-    z-index: 1;
-}
-.carousel-control-prev,.carousel-control-next{
-    margin: 0;
-    padding: 0;
+  display: block;
 }
 
+.dropdown-menu {
+  background-color: var(--dark);
+}
 
-  /* Carousel */
+.dropdown-menu li>a {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-text .btn,
+.carousel-caption .btn {
+  background-color: var(--red);
+  font-weight: bold;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.navbar-text .btn:hover {
+  background-color: var(--dark);
+}
+
+.navbar-text a .fa-brands {
+  margin-left: 10px;
+  color: var(--red);
+}
+
+.navbar-text a .fa-facebook {
+  color: #4267B2;
+}
+
+.navbar-text a .fa-instagram {
+  color: #ff0066;
+}
+
+/* Navbar */
+
+/* Carousel */
+#slide1 {
+  width: 100%;
+  height: 460px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url("img/slide1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#slide2 {
+  width: 100%;
+  height: 460px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url("img/slide2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#slide3 {
+  width: 100%;
+  height: 460px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url("img/slide3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-caption {
+  bottom: 80px;
+  z-index: 2;
+}
+
+.carousel-caption p {
+  font-size: 25px;
+}
+
+.carousel-caption p>a {
+  font-weight: bold;
+}
+
+.carousel-caption h5 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.slider-control{
+  background-color: #231f20;
+}
+
+/* Carousel
