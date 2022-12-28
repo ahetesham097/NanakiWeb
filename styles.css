@@ -1,20 +1,3 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
-/* font-family: 'Poppins', sans-serif; */
-
-/* colors */
-:root {
-  --dark: #231f20;
-  --red: #ed1c24;
-}
-
-/* colors */
-body {
-  overflow-x: hidden;
-}
-
-
 /* Navbar */
 
 .navbar {
@@ -31,7 +14,7 @@ body {
 }
 
 .dropdown-menu {
-  background-color: var(--dark);
+  background-color: var(--dark)!important;
 }
 
 .dropdown-menu li>a {
@@ -64,53 +47,68 @@ body {
 }
 
 /* Navbar */
-
-/* Carousel */
-#slide1 {
-  width: 100%;
-  height: 460px;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url("img/slide1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-#slide2 {
-  width: 100%;
-  height: 460px;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url("img/slide2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-#slide3 {
-  width: 100%;
-  height: 460px;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url("img/slide3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+/* colors */
+:root {
+  --dark: #231f20;
+  --red: #ed1c24;
 }
 
-.carousel-caption {
-  bottom: 80px;
-  z-index: 2;
+/* colors */
+body {
+  overflow-x: hidden;
+}
+p{
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
-.carousel-caption p {
-  font-size: 25px;
+/* Button */
+a.btn{
+  font-size: 1.25rem;
+  background-color: var(--red);
+  font-weight: 700;
+  outline: none;
+  border: none;
+  transition: .5s;
+}
+a.btn:hover{
+  background-color: var(--dark);
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 10px var(--red);
+}
+.btn.btn-danger,
+.btn.btn-secondary{
+  color: white;
+
 }
 
-.carousel-caption p>a {
-  font-weight: bold;
+/* Header */
+.carousel-caption{
+  top: 0;
+  left: 0!important;
+  right: 0!important;
+  bottom: 0!important;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, rgba(255, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+  z-index: 1;
+  
+}
+.carousel-control-prev,
+.carousel-control-next{
+  width: 5%!important;
 }
 
-.carousel-caption h5 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  font-weight: bold;
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  width: 2rem!important;
+  height: 3rem!important;
+  background-color: var(--red);
+  transition: .1s;
 }
-.slider-control{
-  background-color: #231f20;
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover{
+  background-color: var(--dark)!important;
+  box-shadow: 1px 1px 10px var(--red);
 }
-
-/* Carousel
