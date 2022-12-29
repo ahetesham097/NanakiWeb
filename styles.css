@@ -1,5 +1,9 @@
 /* Navbar */
 
+.container-main{
+  padding: 0 7%;
+}
+
 .navbar {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -84,6 +88,9 @@ a.btn:hover{
 }
 
 /* Header */
+.carousel-item{
+  background-size: cover;
+}
 .carousel-caption{
   top: 0;
   left: 0!important;
@@ -111,4 +118,16 @@ a.btn:hover{
 .carousel-control-next-icon:hover{
   background-color: var(--dark)!important;
   box-shadow: 1px 1px 10px var(--red);
+}
+
+/* About Us */
+.img-grid{
+  position: relative;
+  top: 4rem!important;
+}
+
+@include media-breakpoint-up(sm) { 
+  .img-grid{
+    margin-top:100px!important;
+  }
 }
