@@ -62,8 +62,7 @@ body {
   overflow-x: hidden;
 }
 p{
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.75rem;
 }
 
 /* Button */
@@ -126,8 +125,40 @@ a.btn:hover{
   top: 4rem!important;
 }
 
-@include media-breakpoint-up(sm) { 
+@media screen and (max-width:576px) {
+  .about-col{
+    margin-top:-1rem!important;
+  }
   .img-grid{
-    margin-top:100px!important;
+    position: relative;
+    top: 1rem!important;
+  }
+  h5.text-start,h1.mb-4{
+    text-align: center!important;
+  }
+  .carousel-item,.w-100{
+    min-height: 200px;
+  }
+  p{
+    font-size: 1rem;
+  }
+  p.mb-4.mb-sm-1{
+    margin-bottom: 5px!important;
+    text-shadow: 2px 1.5px 1px var(--dark);
+  }
+  h1.fw-bold{
+    font-size: 1.5rem;
+    line-height: 100%!important;
+    text-shadow: 2px 1.5px 1px var(--dark);
+  }
+  a.py-md-3{
+    font-size: 1rem;
+    background-color: var(--red);
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    transition: .5s;
   }
 }
